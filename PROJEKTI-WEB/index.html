@@ -1,0 +1,197 @@
+<!DOCTYPE>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- 
+            device-width - e ndrron pamjen sipas paisjes
+            initial-scale - sets the initial zoom level when the page is first loaded by the browser.
+        -->
+
+        <title>DREAM Travel</title>
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="index.css">
+    
+    </head>
+    <body>
+
+        <!-- home section -->
+        <section id="home" class="home">
+            <!-- header -->
+            <header>
+
+                <div id="menu-bar">
+
+                    <nav class="navbar">
+                        <a href="#" class="logo"><span>D</span>REAM</a>
+                        
+                        <a href="#home">Home</a>
+                        <a href="#book">Book</a>
+                        <a href="packages.html">Packages</a>
+                        <a href="#services">Services</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#review">Review</a>
+                        <a href="#contact">Contact</a>
+
+                    </nav>
+                </div>
+
+                <div class="icons">
+                    <i class="fas fa-search" id="search-btn"></i> <!-- fas fa-search osht icon per search -->
+
+                    <button class="open-button" onclick="openForm()"><i class="fas fa-user" id="user-btn"></i></button>
+                    <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Login</h1>
+    
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <p><a href="#">Forgot password?</a></p>
+                        <p><a href="#">Not registered?</a></p>
+    
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                    </div>
+                     <!-- fas fa-search osht icon per user -->
+                </div>
+
+                <form class="search-bar-container">
+                    <input type="search" id="search-bar" placeholder="search here...">
+                    <label for="search-bar" class="fas fa-search"></label>
+                </form>
+            </header>
+
+            <!-- log in -->
+
+            
+            <div class="content">
+                <h3>MAKE YOUR DREAM COME TRUE</h3>
+                <p>DISCOVER NEW PLACES WITH US, ADVENTURE AWAITS</p>
+                <a href="#" class="btn">discover more</a>
+            </div>
+
+            <div class="video-container">
+                <video src="images/vid-4.mp4" id="video-background" loop autoplay muted></video>
+            </div>
+        </section>
+
+        <!-- book section starts  -->
+
+        <section class="book" id="book">
+
+            <h1 class="heading">
+                <span>BOOK</span>
+                <span>NOW</span>
+            </h1>
+
+            <div class="row">
+
+                <div class="image">
+                    <img src="images/book-img.svg" alt="">
+                </div>
+
+                <form action="">
+                    <div class="inputBox">
+                        <h3>where to</h3>
+                        <input type="text" placeholder="place">
+                    </div>
+                    <div class="inputBox">
+                        <h3>how many</h3>
+                        <input type="number" placeholder="number of guests">
+                    </div>
+                    <div class="inputBox">
+                        <h3>arrivals</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>leaving</h3>
+                        <input type="date">
+                    </div>
+                        
+                    <input type="submit" class="btn" value="book now">
+                    
+                </form>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+    
+            <h1 class="heading">
+                <span>CONTACT</span>
+            </h1>
+        
+            <div class="row">
+        
+                <form action="">
+                    <div class="inputBox">
+                        <input type="text" placeholder="name">
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" placeholder="number">
+                        <input type="text" placeholder="subject">
+                    </div>
+                    <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" class="btn" value="send message">
+                </form>
+        
+            </div>
+            
+        </section>
+        
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+                </div>
+                <div class="box">
+                    <h3>branch locations</h3>
+                    <a href="#">india</a>
+                    <a href="#">USA</a>
+                    <a href="#">japan</a>
+                    <a href="#">france</a>
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">book</a>
+                    <a href="#">packages</a>
+                    <a href="#">services</a>
+                    <a href="#">gallery</a>
+                    <a href="#">review</a>
+                    <a href="#">contact</a>
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkedin</a>
+                </div>
+        
+            </div>
+        
+            <h1 class="credit"> created by <span> Dream Travel Team </span> | all rights reserved! </h1>
+        
+        </section>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>

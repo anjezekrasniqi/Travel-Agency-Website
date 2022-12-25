@@ -1,0 +1,225 @@
+<!DOCTYPE>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- 
+            device-width - e ndrron pamjen sipas paisjes
+            initial-scale - sets the initial zoom level when the page is first loaded by the browser.
+        -->
+
+        <title>DREAM Travel</title>
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="packages.css">
+    
+    </head>
+    <body>
+
+        <section id="home" class="home">
+            <header>
+
+                <div id="menu-bar">
+                    <nav class="navbar">
+                        <a href="index.html" class="logo"><span>D</span>REAM</a>
+                        <a href="index.html">Home</a>
+                        <a href="index.html">Book</a>
+                        <a href="packages.html">Packages</a>
+                        <a href="#services">Services</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#review">Review</a>
+                        <a href="index.html">Contact</a>
+
+                    </nav>
+                </div>
+
+                <div class="icons">
+                    <i class="fas fa-search" id="search-btn"></i> <!-- fas fa-search osht icon per search -->
+
+                    <button class="open-button" onclick="openForm()"><i class="fas fa-user" id="user-btn"></i></button>
+                    <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <h1>Login</h1>
+    
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <p><a href="#">Forgot password?</a></p>
+                        <p><a href="#">Not registered?</a></p>
+    
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                    </div>
+                </div>
+
+                <form class="search-bar-container">
+                    <input type="search" id="search-bar" placeholder="search here...">
+                    <label for="search-bar" class="fas fa-search"></label>
+                </form>
+            </header>
+
+            <section class="packages" id="packages">
+
+                <br><br><br>
+                <div class="box-container">
+            
+                    <div class="box">
+                        <img src="images/p-1.jpg" alt="">
+                        <div class="content">
+                            <h3> mumbai </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price"> $90.00 <span>$120.00</span> </div>
+                            <a href="#" class="btn">book now</a>
+                        </div>
+                    </div>
+            
+                    <div class="box">
+                        <img src="images/p-2.jpg" alt="">
+                        <div class="content">
+                            <h3> hawaii </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price"> $90.00 <span>$120.00</span> </div>
+                            <a href="#" class="btn">book now</a>
+                        </div>
+                    </div>
+            
+                    <div class="box">
+                        <img src="images/p-3.jpg" alt="">
+                        <div class="content">
+                            <h3> sydney </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price"> $90.00 <span>$120.00</span> </div>
+                            <a href="#" class="btn">book now</a>
+                        </div>
+                    </div>
+            
+                    <div class="box">
+                        <img src="images/p-4.jpg" alt="">
+                        <div class="content">
+                            <h3> paris </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price"> $90.00 <span>$120.00</span> </div>
+                            <a href="#" class="btn">book now</a>
+                        </div>
+                    </div>
+            
+                    <div class="box">
+                        <img src="images/p-5.jpg" alt="">
+                        <div class="content">
+                            <h3> tokyo </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price"> $90.00 <span>$120.00</span> </div>
+                            <a href="#" class="btn">book now</a>
+                        </div>
+                    </div>
+            
+                    <div class="box">
+                        <img src="images/p-6.jpg" alt="">
+                        <div class="content">
+                            <h3>  egypt </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price"> $90.00 <span>$120.00</span> </div>
+                            <a href="#" class="btn">book now</a>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </section>
+        </section>
+
+
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>about us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+                </div>
+                <div class="box">
+                    <h3>branch locations</h3>
+                    <a href="#">india</a>
+                    <a href="#">USA</a>
+                    <a href="#">japan</a>
+                    <a href="#">france</a>
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">book</a>
+                    <a href="#">packages</a>
+                    <a href="#">services</a>
+                    <a href="#">gallery</a>
+                    <a href="#">review</a>
+                    <a href="#">contact</a>
+                </div>
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkedin</a>
+                </div>
+        
+            </div>
+        
+            <h1 class="credit"> created by <span> Dream Travel Team </span> | all rights reserved! </h1>
+        
+        </section>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
